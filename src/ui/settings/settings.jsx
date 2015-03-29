@@ -16,17 +16,6 @@ export class SettingsView extends React.Component {
       this.players = PlayerStore.players;
    }
 
-   componentDidMount() {
-      this.unsubscribePlayers = PlayerStore.listen((players) => {
-         this.players = players;
-         this.forceUpdate();
-      });
-   }
-
-   componentWillUnmount() {
-      this.unsubscribePlayers();
-   }
-
    handleChangeName(seat, event) {
       PlayerActions.updatePlayer(seat, {name: event.target.value});
    }
@@ -36,6 +25,7 @@ export class SettingsView extends React.Component {
    }
 
    render() {
+      this.players = PlayerStore.players;
       console.log('rendering setings');
 
       var players = Seat.all().map((seat) => {

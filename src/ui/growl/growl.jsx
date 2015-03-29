@@ -15,16 +15,6 @@ export class GrowlContainer extends React.Component {
       super(props);
    }
 
-   componentDidMount() {
-      this.unsubscribe = NotificationStore.listen(() => {
-         this.forceUpdate();
-      });
-   }
-
-   componentWillUnmount() {
-      this.unsubscribe();
-   }
-
    handleResponse(id, response) {
       NotificationActions.dismiss({id: id, response: response});
    }

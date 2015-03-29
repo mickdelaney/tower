@@ -28,9 +28,11 @@ System.config({
     "react": "npm:react@0.13.0-beta.1",
     "reflux": "npm:reflux@0.2.5",
     "text": "github:systemjs/plugin-text@0.0.2",
+    "throttle-debounce": "npm:throttle-debounce@0.1.1",
     "traceur": "github:jmcriffey/bower-traceur@0.0.87",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87",
     "yahoo/pure": "github:yahoo/pure@0.6.0",
+    "zone.js": "npm:zone.js@0.4.2",
     "github:floatdrop/plugin-jsx@0.1.1": {
       "react-tools": "npm:react-tools@0.12.2"
     },
@@ -465,6 +467,9 @@ System.config({
       "is-finite": "npm:is-finite@1.0.0",
       "is-nan": "npm:is-nan@1.0.1"
     },
+    "npm:jquery@1.11.2": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:js-tokens@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
@@ -751,6 +756,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:throttle-debounce@0.1.1": {
+      "jquery": "npm:jquery@1.11.2"
+    },
     "npm:through@2.3.6": {
       "process": "github:jspm/nodelibs-process@0.1.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
@@ -767,6 +775,10 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:zone.js@0.4.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.1"
     }
   }
 });

@@ -12,6 +12,7 @@ export class BiddingHistory extends React.Component {
     }
 
     render() {
+      console.log('rendering bidding history');
       var headings = [];
 
       for (var seat = Seat.North; seat <= Seat.West; seat ++) {

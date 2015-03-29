@@ -59,7 +59,9 @@
       "purecss": "npm:purecss@^0.6.0",
       "react": "npm:react@^0.13.0",
       "reflux": "npm:reflux@^0.2.5",
-      "text": "github:systemjs/plugin-text@^0.0.2"
+      "text": "github:systemjs/plugin-text@^0.0.2",
+      "throttle-debounce": "npm:throttle-debounce@^0.1.1",
+      "zone.js": "npm:zone.js@^0.4.1"
     },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.87",

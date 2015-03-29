@@ -22,28 +22,12 @@ export class Table extends React.Component {
       super(props);
 
       this.players = PlayerStore.players;
-      this.game = GameStore.currentState();
-   }
-
-   componentDidMount() {
-      this.unsubscribePlayers = PlayerStore.listen((players) => {
-         this.players = players;
-         this.forceUpdate();
-      });
-
-      this.unsubscribeGame = GameStore.listen((state) => {
-         this.game = state;
-         this.forceUpdate();
-      });
-   }
-
-   componentWillUnmount() {
-      this.unsubscribePlayers();
-      this.unsubscribeGame();
+      //this.game = GameStore.currentState();
    }
 
    render() {
       console.log('rendering table');
+      this.game = GameStore.currentState();
 
       var players = this.players.map((player) => {
          return (

@@ -6,6 +6,8 @@ import {Table} from './table/table.jsx';
 import {SettingsView} from './settings/settings.jsx';
 import {GrowlContainer} from './growl/growl.jsx';
 
+import {bootstrap} from './zone-bootstrap';
+
 /* these should probably be somewhere else */
 import a from 'necolas/normalize.css';
 import b from 'purecss/build/pure.css!';
@@ -64,4 +66,5 @@ export class App extends React.Component {
    }
 }
 
-React.render(<App/>, document.body);
+bootstrap(<App/>, document.body);
+//React.render(<App/>, document.body);
