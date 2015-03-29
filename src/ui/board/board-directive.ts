@@ -9,8 +9,8 @@ function towerBoardDirective() {
         scope: {
             board: "="
         },
-        template: require('./board-view.html.js!html')
+        template: require('./board-view.html')
     }
 };
- 
+
 export = towerBoardDirective;

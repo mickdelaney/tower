@@ -12,10 +12,10 @@ function towerBiddingBoxDirective() {
             bidding: "=",
             player: "="
         },
-        template: require('./bidding-box-view.html.js!html'),
+        template: require('./bidding-box-view.html'),
         controller: BiddingBoxController,
         controllerAs: "cx"
     }
 };
- 
+
 export = towerBiddingBoxDirective;

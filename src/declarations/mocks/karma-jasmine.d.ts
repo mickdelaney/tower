@@ -3,7 +3,7 @@
 // Definitions by: Michel Salib <https://github.com/michelsalib>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="jasmine.d.ts" />
+/// <reference path="./jasmine.d.ts" />
 
 declare function ddescribe(description: string, specDefinitions: () => void): void;
 declare function iit(expectation: string, assertion: () => void): void;

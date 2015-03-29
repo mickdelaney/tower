@@ -1,10 +1,9 @@
 /// <reference path="../_references.d.ts" />
 
 import angular = require("angular");
-
-window["Hammer"] = require("hammer"); // one black mark to bower.
-require("angular-material");
+require("angular-material"); // jspm has a shim to load the css
 require("angular-ui-router");
+require("./index.css");
 
 import cards = require("./cards/index");
 import board = require("./board/index");
@@ -17,21 +16,21 @@ export var Module: ng.IModule = angular.module("tower.ui", [
 ]);
 
 Module.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", ($stateProvider: any, $urlRouterProvider: any, $locationProvider: ng.ILocationProvider) => {
-			console.log("Application started");
+		console.log("Application started");
 
     	$locationProvider.html5Mode(true);
 
 			$stateProvider.state('menu', {
 				controller: MenuController,
 				controllerAs: "menuCtrl",
-				template: require('./menu/menu-view.html.js!html'),
+				template: require('./menu/menu-view.html'),
 				url: '/menu'
 			});
 
 			$stateProvider.state('table', {
 				controller: TableController,
 				controllerAs: "tableCtrl",
-				template: require('./table/table-view.html.js!html'),
+				template: require('./table/table-view.html'),
                 params: {
                     "game": {},
                     "players": []

@@ -9,8 +9,8 @@ function towerBidDirective() {
         scope: {
             bid: "="
         },
-        template: require('./bid-view.html.js!html')
+        template: require('./bid-view.html')
     }
 };
- 
+
 export = towerBidDirective;

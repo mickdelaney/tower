@@ -9,8 +9,8 @@ function towerCardDirective() {
         scope: {
             card: "="
         },
-        template: require('./card-view.html.js!html')
+        template: require('./card-view.html')
     }
 };
- 
+
 export = towerCardDirective;
