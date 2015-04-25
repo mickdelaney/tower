@@ -1,0 +1,1 @@
+module.exports = require("npm:classnames@1.1.4/index");
